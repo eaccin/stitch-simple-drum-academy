@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rhythm Studio - Quick Lessons</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Be+Vietnam+Pro:wght@100;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#131313",
+                        "tertiary-container": "#c5fe00",
+                        "on-secondary": "#462400",
+                        "error": "#ff716c",
+                        "secondary-fixed": "#ffc697",
+                        "primary-dim": "#0f6df3",
+                        "on-surface": "#ffffff",
+                        "surface-tint": "#89acff",
+                        "surface": "#0e0e0e",
+                        "on-tertiary-fixed": "#384b00",
+                        "on-error-container": "#ffa8a3",
+                        "tertiary-dim": "#b9ef00",
+                        "surface-container-high": "#201f1f",
+                        "primary": "#89acff",
+                        "secondary-container": "#8e4e00",
+                        "on-primary-fixed": "#000000",
+                        "primary-container": "#739eff",
+                        "outline": "#777575",
+                        "tertiary": "#f3ffcd",
+                        "surface-variant": "#262626",
+                        "inverse-primary": "#0059cb",
+                        "secondary": "#fd9000",
+                        "inverse-surface": "#fcf8f8",
+                        "on-surface-variant": "#adaaaa",
+                        "secondary-fixed-dim": "#ffb470",
+                        "on-tertiary": "#4f6700",
+                        "on-error": "#490006",
+                        "error-container": "#9f0519",
+                        "surface-container-lowest": "#000000",
+                        "surface-container": "#1a1919",
+                        "on-secondary-fixed": "#512a00",
+                        "surface-container-highest": "#262626",
+                        "outline-variant": "#494847",
+                        "surface-bright": "#2c2c2c",
+                        "primary-fixed-dim": "#5a90ff",
+                        "primary-fixed": "#739eff",
+                        "background": "#0e0e0e",
+                        "surface-dim": "#0e0e0e",
+                        "on-primary-fixed-variant": "#002966",
+                        "on-tertiary-fixed-variant": "#506900",
+                        "on-tertiary-container": "#485e00",
+                        "secondary-dim": "#ea8400",
+                        "on-primary": "#002b6a",
+                        "inverse-on-surface": "#565554",
+                        "on-primary-container": "#002053",
+                        "tertiary-fixed-dim": "#b9ef00",
+                        "on-secondary-fixed-variant": "#7a4300",
+                        "tertiary-fixed": "#c5fe00",
+                        "on-secondary-container": "#fff6f1",
+                        "error-dim": "#d7383b",
+                        "on-background": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .font-be-vietnam-pro { font-family: 'Be Vietnam Pro', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-asymmetry {
+            transform: skewX(-2deg);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#0e0e0e] shadow-[0_10px_40px_rgba(255,255,255,0.04)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#89acff] cursor-pointer hover:opacity-80 transition-opacity active:scale-95 duration-200" data-icon="menu">menu</span>
+<h1 class="font-space-grotesk font-bold tracking-tighter text-[#89acff] text-2xl">Rhythm Studio</h1>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-primary/20 overflow-hidden active:scale-95 transition-transform duration-200 cursor-pointer">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a male drummer with cool studio lighting and soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhluWEl80ihBGQoKaSrUVTkSVq_BdmfB0WZrhc_DZGR9qTzZbkUk-1Y8dWGEgsdDsiE0kEi4E_rbE304CwBZxBerI4KSZ8rLCM78lbLBioHtt2QyEZrzcFfM3DGfN2H7MLvj2YBDFkFAA_bMTrFDwIaYDRXeIWJpub7BCpfIW5iUVvEIrkfMpV4JemRmjUtr7kWhTj4nkmmbbE8gQpiAqkPzbmTtrRPC5tG6JpYkRsfQb9WM09Ow-pMnLrN_wDZL-wwAj6E9WoODg"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Header Section -->
+<section class="mb-12">
+<h2 class="font-headline text-5xl font-bold tracking-tight mb-2">Lessons</h2>
+<p class="font-body text-on-surface-variant text-lg">Master the tempo. Master the soul.</p>
+</section>
+<!-- Lesson Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured Lesson: Your First Beat -->
+<div class="md:col-span-12 lg:col-span-8 group relative bg-surface-container rounded-xl overflow-hidden shadow-2xl hover:shadow-primary/5 transition-all">
+<div class="absolute inset-0 opacity-40 bg-gradient-to-t from-surface-container-highest to-transparent z-10"></div>
+<img alt="Drum sticks" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Dramatic top-down view of professional drumsticks resting on a snare drum under high-contrast blue studio neon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTlIIMgwxZkn-zWSF9cxJtUzcoaVpv6y_NcoILGI_mtud5uYVRZv6MBQoXBhCVzQCLbLwcUTQ4Y_COzImZ3kkNwmk91GWt6SEO9N2HafaKwl7JWfIQwdwFUwv6WuarPsQtU9XiBdNPoiAW-wvwLlymyPC-QvwLpedrI80YelO8TNHFbKrw-YKf9Nhm80qX1Hoe7CnQTHr7bftO2klADiHIDRnClS-38D4i7MyuXW4ZzXu304SuBQyW3QR3kr2Az6kU2Chlsp1wyYs"/>
+<div class="relative z-20 p-8 h-full flex flex-col justify-end min-h-[400px]">
+<span class="font-label text-secondary font-bold uppercase tracking-widest text-xs mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                        Trending Now
+                    </span>
+<h3 class="font-headline text-4xl font-bold mb-4">Your First Beat</h3>
+<div class="flex items-center gap-4 mb-8">
+<!-- Metronome Progress Bar Custom Component -->
+<div class="flex gap-1 items-end">
+<div class="w-2 h-4 bg-tertiary rounded-full shadow-[0_0_10px_#f3ffcd]"></div>
+<div class="w-2 h-6 bg-tertiary rounded-full shadow-[0_0_10px_#f3ffcd]"></div>
+<div class="w-2 h-8 bg-tertiary rounded-full shadow-[0_0_10px_#f3ffcd]"></div>
+<div class="w-2 h-5 bg-surface-variant rounded-full"></div>
+<div class="w-2 h-3 bg-surface-variant rounded-full"></div>
+</div>
+<span class="font-label text-tertiary font-bold tracking-tighter">60% COMPLETE</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container px-8 py-3 rounded-lg font-bold font-headline flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all shadow-[0_0_30px_rgba(137,172,255,0.3)]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            Start Lesson
+                        </button>
+</div>
+</div>
+</div>
+<!-- Side Card: Rock 101 -->
+<div class="md:col-span-6 lg:col-span-4 bg-surface-container-high rounded-xl p-6 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl"></div>
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-secondary-container/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+</div>
+<span class="font-label text-[10px] text-on-surface-variant border border-outline-variant/30 px-2 py-1 rounded">LVL 01</span>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Rock 101</h4>
+<p class="font-body text-sm text-on-surface-variant mb-6">Master the foundation of arena rock anthems.</p>
+</div>
+<div>
+<div class="flex justify-between text-[10px] font-label font-bold mb-2">
+<span class="text-on-surface-variant">PROGRESS</span>
+<span class="text-secondary">40%</span>
+</div>
+<div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden mb-6">
+<div class="h-full bg-secondary w-[40%] shadow-[0_0_10px_#fd9000]"></div>
+</div>
+<button class="w-full bg-surface-container-highest border border-outline-variant/20 hover:border-secondary/50 text-on-surface py-3 rounded-lg font-headline font-bold text-sm transition-all active:scale-95">
+                        CONTINUE
+                    </button>
+</div>
+</div>
+<!-- Side Card: Jazz Swings -->
+<div class="md:col-span-6 lg:col-span-4 bg-surface-container-high rounded-xl p-6 flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-primary-container/30 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</div>
+<span class="font-label text-[10px] text-on-surface-variant border border-outline-variant/30 px-2 py-1 rounded">LVL 04</span>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Jazz Swings</h4>
+<p class="font-body text-sm text-on-surface-variant mb-6">Exploring ghost notes and syncopated rhythmic patterns.</p>
+</div>
+<div>
+<div class="flex justify-between text-[10px] font-label font-bold mb-2">
+<span class="text-on-surface-variant">PROGRESS</span>
+<span class="text-primary">15%</span>
+</div>
+<div class="h-1 w-full bg-surface-variant rounded-full overflow-hidden mb-6">
+<div class="h-full bg-primary w-[15%] shadow-[0_0_10px_#89acff]"></div>
+</div>
+<button class="w-full bg-surface-container-highest border border-outline-variant/20 hover:border-primary/50 text-on-surface py-3 rounded-lg font-headline font-bold text-sm transition-all active:scale-95">
+                        RESUME
+                    </button>
+</div>
+</div>
+<!-- Small Stats Card -->
+<div class="md:col-span-6 lg:col-span-4 bg-surface-container rounded-xl p-6 flex flex-col justify-center items-center text-center border-2 border-dashed border-outline-variant/20">
+<span class="material-symbols-outlined text-tertiary mb-2 scale-150" style="font-variation-settings: 'FILL' 0;">add_circle</span>
+<h4 class="font-headline text-xl font-bold">Discover More</h4>
+<p class="font-body text-xs text-on-surface-variant">Unlock 50+ new modules</p>
+</div>
+<!-- Daily Challenge Card -->
+<div class="md:col-span-6 lg:col-span-4 bg-gradient-to-br from-surface-container-high to-surface-container rounded-xl p-6 relative overflow-hidden group">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary text-sm" data-weight="fill">workspace_premium</span>
+<span class="font-label text-[10px] font-bold text-tertiary uppercase tracking-widest">Daily Drill</span>
+</div>
+<h4 class="font-headline text-xl font-bold leading-tight">180 BPM Paradox</h4>
+</div>
+<div class="mt-6 flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-6 h-6 rounded-full border border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border border-surface bg-surface-variant"></div>
+<div class="w-6 h-6 rounded-full border border-surface bg-primary flex items-center justify-center text-[8px] font-bold">12+</div>
+</div>
+<button class="text-tertiary font-headline font-bold text-xs hover:underline">JOIN CHALLENGE</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Technique Drills -->
+<section class="mt-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline text-3xl font-bold">Technique Drills</h3>
+<p class="font-body text-on-surface-variant">Fine-tune your muscle memory.</p>
+</div>
+<button class="text-primary font-headline font-bold text-sm hover:opacity-80 transition-opacity">VIEW ALL</button>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-6 no-scrollbar">
+<!-- Drill Card 1 -->
+<div class="min-w-[280px] bg-surface-container-high p-5 rounded-xl border-l-4 border-secondary/50">
+<div class="flex justify-between items-center mb-4">
+<span class="material-symbols-outlined text-secondary" data-icon="fitness_center">fitness_center</span>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">10 MINS</span>
+</div>
+<h5 class="font-headline font-bold mb-1">Double Stroke Roll</h5>
+<p class="font-body text-xs text-on-surface-variant mb-4">Focus on bounce and control.</p>
+<div class="flex items-center justify-between">
+<div class="h-1 w-24 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-secondary cursor-pointer">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Drill Card 2 -->
+<div class="min-w-[280px] bg-surface-container-high p-5 rounded-xl border-l-4 border-primary/50">
+<div class="flex justify-between items-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="drum_kit">tools_installation_kit</span>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">15 MINS</span>
+</div>
+<h5 class="font-headline font-bold mb-1">Kick Independence</h5>
+<p class="font-body text-xs text-on-surface-variant mb-4">De-coupling your foot from your hands.</p>
+<div class="flex items-center justify-between">
+<div class="h-1 w-24 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/4"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Drill Card 3 -->
+<div class="min-w-[280px] bg-surface-container-high p-5 rounded-xl border-l-4 border-tertiary/50">
+<div class="flex justify-between items-center mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="speed">speed</span>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">5 MINS</span>
+</div>
+<h5 class="font-headline font-bold mb-1">Paradiddle Speed</h5>
+<p class="font-body text-xs text-on-surface-variant mb-4">Pushing the BPM with clean hits.</p>
+<div class="flex items-center justify-between">
+<div class="h-1 w-24 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-1/2"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-tertiary cursor-pointer">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[2rem] bg-[#1a1919]/80 backdrop-blur-lg shadow-[0_-10px_50px_rgba(137,172,255,0.05)]">
+<div class="flex justify-around items-center px-4 pb-8 pt-4 w-full">
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../drum_pad_1/code.html">
+<span class="material-symbols-outlined mb-1 transition-transform group-active:scale-90" data-icon="drum_kit">tools_installation_kit</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Drum Pad</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../technique_library/code.html">
+<span class="material-symbols-outlined mb-1 transition-transform group-active:scale-90" data-icon="fitness_center">fitness_center</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Techniques</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#fd9000] scale-110 drop-shadow-[0_0_15px_rgba(253,144,0,0.4)] group" href="../quick_lessons/code.html">
+<span class="material-symbols-outlined mb-1 transition-transform group-active:scale-90" data-icon="school" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Lessons</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../progress_tracker/code.html">
+<span class="material-symbols-outlined mb-1 transition-transform group-active:scale-90" data-icon="bar_chart">bar_chart</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Progress</span>
+</a>
+</div>
+</nav>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

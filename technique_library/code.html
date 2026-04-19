@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Be+Vietnam+Pro:ital,wght@0,100..0,900;1,100..1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#131313",
+                        "tertiary-container": "#c5fe00",
+                        "on-secondary": "#462400",
+                        "error": "#ff716c",
+                        "secondary-fixed": "#ffc697",
+                        "primary-dim": "#0f6df3",
+                        "on-surface": "#ffffff",
+                        "surface-tint": "#89acff",
+                        "surface": "#0e0e0e",
+                        "on-tertiary-fixed": "#384b00",
+                        "on-error-container": "#ffa8a3",
+                        "tertiary-dim": "#b9ef00",
+                        "surface-container-high": "#201f1f",
+                        "primary": "#89acff",
+                        "secondary-container": "#8e4e00",
+                        "on-primary-fixed": "#000000",
+                        "primary-container": "#739eff",
+                        "outline": "#777575",
+                        "tertiary": "#f3ffcd",
+                        "surface-variant": "#262626",
+                        "inverse-primary": "#0059cb",
+                        "secondary": "#fd9000",
+                        "inverse-surface": "#fcf8f8",
+                        "on-surface-variant": "#adaaaa",
+                        "secondary-fixed-dim": "#ffb470",
+                        "on-tertiary": "#4f6700",
+                        "on-error": "#490006",
+                        "error-container": "#9f0519",
+                        "surface-container-lowest": "#000000",
+                        "surface-container": "#1a1919",
+                        "on-secondary-fixed": "#512a00",
+                        "surface-container-highest": "#262626",
+                        "outline-variant": "#494847",
+                        "surface-bright": "#2c2c2c",
+                        "primary-fixed-dim": "#5a90ff",
+                        "primary-fixed": "#739eff",
+                        "background": "#0e0e0e",
+                        "surface-dim": "#0e0e0e",
+                        "on-primary-fixed-variant": "#002966",
+                        "on-tertiary-fixed-variant": "#506900",
+                        "on-tertiary-container": "#485e00",
+                        "secondary-dim": "#ea8400",
+                        "on-primary": "#002b6a",
+                        "inverse-on-surface": "#565554",
+                        "on-primary-container": "#002053",
+                        "tertiary-fixed-dim": "#b9ef00",
+                        "on-secondary-fixed-variant": "#7a4300",
+                        "tertiary-fixed": "#c5fe00",
+                        "on-secondary-container": "#fff6f1",
+                        "error-dim": "#d7383b",
+                        "on-background": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-asymmetry {
+            clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 100%);
+        }
+        .glass-panel {
+            background: rgba(32, 31, 31, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#0e0e0e] shadow-[0_10px_40px_rgba(255,255,255,0.04)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform duration-200 hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined text-[#89acff]" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline text-2xl font-bold tracking-tighter text-[#89acff]">Rhythm Studio</h1>
+</div>
+<div class="flex items-center gap-6">
+<!-- Navigation links for Web -->
+<nav class="hidden md:flex gap-8">
+<a class="font-be-vietnam-pro text-sm text-[#ffffff]/60 hover:opacity-80 transition-opacity" href="../drum_pad_1/code.html">Drum Pad</a>
+<a class="font-be-vietnam-pro text-sm text-[#89acff] font-bold hover:opacity-80 transition-opacity border-b-2 border-[#89acff] pb-1" href="../technique_library/code.html">Techniques</a>
+<a class="font-be-vietnam-pro text-sm text-[#ffffff]/60 hover:opacity-80 transition-opacity" href="../quick_lessons/code.html">Lessons</a>
+<a class="font-be-vietnam-pro text-sm text-[#ffffff]/60 hover:opacity-80 transition-opacity" href="../progress_tracker/code.html">Progress</a>
+</nav>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary active:scale-95 transition-transform duration-200">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional musician with cool studio lighting and a focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1YeEcH_N1ZNqwrSenu9o9Lp10czfsvOjVKT-xhmZIV0qprupboXVbY33G2_zFRM92V8Ef9KeoOx4wiJ-G5nJ4U4a_cyGkFsHVDXk7fwkHdTWx000RFxZ7KLbNQJJFcQyrx6Q2_dKwHt_6qz0iOEt2MJE9oo90wste0cLm4a2eNZs-cXXdrItXhD8MoHKbaggyiFav68x5hc8MWBWjtr1trhEVlEFZ0pGWRII-6INhZ2hWgwF9qgEG43gKo5JOLaHOLK7bJXw9QaE"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="font-headline text-secondary font-bold text-sm tracking-[0.2em] uppercase">Mastery Library</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold mt-2 tracking-tighter">Techniques</h2>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full border border-outline-variant/15">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="filter_list">filter_list</span>
+<span class="text-sm font-label uppercase tracking-widest font-bold">All Grips</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full border border-outline-variant/15">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="sort">sort</span>
+<span class="text-sm font-label uppercase tracking-widest font-bold">Difficulty</span>
+</div>
+</div>
+</div>
+<!-- Techniques Grid (Kinetic Asymmetry) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Matched Grip -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high hover:shadow-[0_0_40px_rgba(137,172,255,0.1)] transition-all duration-500">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close-up of a drummer's hands holding sticks in matched grip over a modern snare drum with purple neon highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmDCl4GCiEZYcFghEQ9ChrZYiroEE9sA8K90yIfeKjrvgr4K0qTe-16yP1IrhRrbr6qygje6OvrJAr1hXEgWsZ69WeN4ej8VDcvec10SleQ1z-hK6ONgzcImG2guIpDa8_1gkb9k8WrM5aJX1UpOdF5kizihOZ1oj__4NtYZf5TpGlWW7n_cXyjvY_asrzVaXci_BQ7qWP1sWPHNjjbvSoPhd8p9Sj4FME_n1306X7iVQB5fJj-aUhOKXVFaCh7q87ljGfbx_-AcI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+<button class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-on-primary-fixed shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-tertiary-container/10 text-tertiary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-tertiary/20">Beginner</span>
+<span class="text-on-surface-variant text-xs font-label uppercase tracking-widest">4:30 MIN</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Matched Grip</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">The most common holding method where both hands hold the sticks the same way. Essential for modern rock and pop.</p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+<div class="flex-1 h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-3/4"></div>
+</div>
+<span class="text-[10px] font-bold text-tertiary">75% MASTERED</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Single Stroke Roll -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high hover:shadow-[0_0_40px_rgba(253,144,0,0.1)] transition-all duration-500">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="motion blur shot of drumsticks hitting a drum head rapidly, creating a vibration effect with orange and blue studio lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKCvtVrIrC3vEFylWZiyWJsda5_vuI7L9GD-lvQFD2lISa5KOyzpJtRPWJezFSe9t1UenIX9RDFYJ9YJ5d1FWTwbdOwu93jj3TUfAd1IRBjTkbPuQvIVR56y9jRGOJvNPUl097l9K4hQr3jzP72A1vheLQTZSRHWyJ_gBdXkLPadBpndglkeAUGgqy7Qd9nC8mQXA9RgiyiT495pA8hXGBxSo7ci_MBWP3B1_Gf_b63Hek9j115Kxn57Wnf6eVJFuf2vb-gqxvsDs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+<button class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-on-secondary shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-secondary/20">Intermediate</span>
+<span class="text-on-surface-variant text-xs font-label uppercase tracking-widest">8:15 MIN</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Single Stroke Roll</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Alternating strokes between right and left hands. The foundation of speed and fluidity on the kit.</p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+<div class="flex-1 h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-1/4"></div>
+</div>
+<span class="text-[10px] font-bold text-secondary">25% MASTERED</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Paradiddles -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high hover:shadow-[0_0_40px_rgba(137,172,255,0.1)] transition-all duration-500">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="drummer practicing rudiments on a practice pad, technical and precise, cool blue rim lighting, atmospheric studio smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwlCAnxGuuwNW7xgYbpubC8UssetY1UlYNALCa-U31XA-QtlW6f1QPlPegJTa4ufU3ZpahRkBgplmgcqBc6hzwPsr1ooxRFbyI6St32nGt_qQetpUIeMNyYS_12ETCFcGFy4xYwZp9Kg8wNVXOG6P8ElUPExSjvq0aCLPVDWfHbLi7ruWXBTcsuPkMBAS48UilsMjaETXTHfOdKcfPWP0IfmYnFiq7dPdfZqgRSRwPvTLupl2XqG1k-dA0vJOmo0HdDGoqzbWYDMg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+<button class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-on-primary-fixed shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-error/10 text-error px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-error/20">Advanced</span>
+<span class="text-on-surface-variant text-xs font-label uppercase tracking-widest">12:00 MIN</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Paradiddles</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Combining single and double strokes (RLRR LRLL). The key to complex rhythmic coordination and phrasing.</p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+<div class="flex-1 h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-error w-0"></div>
+</div>
+<span class="text-[10px] font-bold text-error">NOT STARTED</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Moeller Technique -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high hover:shadow-[0_0_40px_rgba(197,254,0,0.1)] transition-all duration-500">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="highly technical close-up of a hand using the whip-like Moeller technique on a drum kit, bright lime green accent lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK3f6eSUT8WJ9jyboPfsXJUF_TyjIJXZTQF2CkpA4155L5TnybzL0_lox80sKGsiV3giDfVkS_cSrcpomt1dxyceGpihUPh0--4thISpl_1NFxt9G0r6JrX33ULh4eJAzucEywXnL3waLP4dofq5-26vWGKbYArXUBiLKq_P5z1cQH-WfXJUkc6RvHY0Y-6iKOFXrft4e_fxd1W1Nj30256SvRFyKqwljmkzq-uSJHJIzIzrSyBWqzcgdPCAfWWtrkPY-snNhFJbA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+<button class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-tertiary text-on-tertiary shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-tertiary-container/10 text-tertiary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-tertiary/20">Advanced</span>
+<span class="text-on-surface-variant text-xs font-label uppercase tracking-widest">15:45 MIN</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Moeller Technique</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Using a whip-like motion to generate multiple strokes with a single hand movement. Power with minimal effort.</p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+<div class="flex-1 h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-1/2 shadow-[0_0_10px_#c5fe00]"></div>
+</div>
+<span class="text-[10px] font-bold text-tertiary">50% MASTERED</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Traditional Grip -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high hover:shadow-[0_0_40px_rgba(137,172,255,0.1)] transition-all duration-500">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="elegant close up of a hand in traditional jazz grip, sticks angled, soft warm lighting with subtle blue highlights, professional jazz studio vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLwTkCcL21_ruBE1S5KYnZXAHrGXNmMiz4rHaTy0ayUKiwJWoggJ_SDd2dfJKH2Fx5mnqmWH6_6b4y7AuWSYwgQUPy2oxPK_jsSVvtrW-Ocd1zr1lkguUzJUmdNi1yQ2sFKfo5nB1T-ZW1SrncCXB5nnWBpULhykYs7ohkeFsY1XtHtXoWKMJHHeszEkeFHk9O9EArL-vOYEPh59ZoR6sNsvZkVMv0SoySUAaqBL6fvw8ZxT7GwJIS8yiAIR1rSOozfWtpHIGR-4g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent"></div>
+<button class="absolute bottom-4 right-4 w-12 h-12 flex items-center justify-center rounded-full bg-primary text-on-primary-fixed shadow-lg active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-secondary/20">Intermediate</span>
+<span class="text-on-surface-variant text-xs font-label uppercase tracking-widest">6:20 MIN</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Traditional Grip</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">The underhand grip used in jazz and marching percussion. Offers unique sensitivity and rebound control.</p>
+<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+<div class="flex-1 h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+<span class="text-[10px] font-bold text-secondary">COMPLETE</span>
+</div>
+</div>
+</div>
+<!-- Empty State / Coming Soon -->
+<div class="group relative overflow-hidden rounded-xl border-2 border-dashed border-outline-variant/20 flex flex-col items-center justify-center p-8 text-center bg-surface-container-low">
+<span class="material-symbols-outlined text-4xl text-outline-variant mb-4" data-icon="pending">pending</span>
+<h3 class="font-headline text-xl font-bold text-on-surface-variant mb-2">More Techniques Soon</h3>
+<p class="text-on-surface-variant text-xs tracking-widest uppercase font-bold">New Mastery Content Weekly</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[2rem] bg-[#1a1919]/80 backdrop-blur-lg shadow-[0_-10px_50px_rgba(137,172,255,0.05)] md:hidden">
+<div class="flex justify-around items-center px-4 pb-8 pt-4 w-full">
+<!-- Drum Pad -->
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../drum_pad_1/code.html">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="drum_kit">tools_installation_kit</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Drum Pad</span>
+</a>
+<!-- Techniques (Active) -->
+<a class="flex flex-col items-center justify-center text-[#fd9000] scale-110 drop-shadow-[0_0_15px_rgba(253,144,0,0.4)] active:scale-90 duration-150 transition-all" href="../technique_library/code.html">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="fitness_center" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Techniques</span>
+</a>
+<!-- Lessons -->
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../quick_lessons/code.html">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="school">school</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Lessons</span>
+</a>
+<!-- Progress -->
+<a class="flex flex-col items-center justify-center text-[#ffffff]/40 hover:text-[#89acff] transition-colors group" href="../progress_tracker/code.html">
+<span class="material-symbols-outlined text-2xl mb-1" data-icon="bar_chart">bar_chart</span>
+<span class="font-be-vietnam-pro text-[10px] font-bold uppercase tracking-widest">Progress</span>
+</a>
+</div>
+</nav>
+<!-- Floating Playback Control (The Equipment feel) -->
+<div class="fixed bottom-32 left-1/2 -translate-x-1/2 z-40 glass-panel border border-outline-variant/20 rounded-full px-6 py-3 flex items-center gap-6 shadow-2xl">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#fd9000]"></span>
+<span class="text-xs font-bold font-headline uppercase tracking-widest">Last Session: Single Stroke</span>
+</div>
+<div class="w-[1px] h-4 bg-outline-variant/30"></div>
+<button class="flex items-center gap-2 text-primary hover:text-white transition-colors group">
+<span class="text-xs font-bold font-headline uppercase tracking-widest">Resume Practice</span>
+<span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</body></html>
